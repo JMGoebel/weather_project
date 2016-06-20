@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
   "use strict";
+
   function getWeather() {
     var openWeatherAPI = "http://api.openweathermap.org/data/2.5/weather?",
       weatherData;
@@ -15,6 +16,16 @@ $(document).ready(function () {
         $("#data").text("Request Failed: " + err);
       });
     return weatherData;
+  }
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        console.log(position.coords.latitude, position.coords.longitude);
+      });
+    } else {
+      console.log("Geolocation is not supported by this browser.");
+    }
   }
 });
 
