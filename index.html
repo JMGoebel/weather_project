@@ -3,10 +3,37 @@
    <head>
     <title>Local Weather App</title>
     <link rel="stylesheet" type="text/css" href="css.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 "/>
   </head>
   <body>
-    <div id="data"></div>
-
+    <!-- BACKGROUND LAYER z: -1 -->
+    <div id="background"></div>
+    <!-- ORBIT LAYER z: 0 -->
+    <div id="orbit"></div>
+    <div id="clouds"></div>
+    <div id="data">
+      <div>
+        <div>
+          <h1 id="location"></h1>
+          <div id="fast_display">
+            <div>
+              <div id="weather_icon"></div>
+            </div>
+            <div>
+              <div id="weather_digits"></div>
+            </div>
+            <div>
+              <div id="weather_discription"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <div id="discription">
+            We are sorry an error has occured.
+          </div>
+          <div id="foot">This is a <a href="freecodecamp.com">freecodecamp.com</a> project created bu <a href="https://www.freecodecamp.com/jmgoebel">Jason Goebel.</a></div>
+        </div>
+      </div>
+    </div>
     <script src="jquery-3.0.0.js"></script>
     <script src="js.js"></script>
   </body>

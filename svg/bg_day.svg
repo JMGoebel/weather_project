@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="day" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_3_);stroke:#000000;stroke-width:0.9819;stroke-miterlimit:10;}
+</style>
+<linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="480.25" y1="559.5" x2="480.25" y2="-2.154047e-008" gradientTransform="matrix(1 0 0 -1 0 560)">
+	<stop  offset="0" style="stop-color:#55BEFF"/>
+	<stop  offset="6.405089e-002" style="stop-color:#00C2FF"/>
+	<stop  offset="0.1706" style="stop-color:#3FD6FF"/>
+	<stop  offset="0.3066" style="stop-color:#15C7FF"/>
+	<stop  offset="0.4649" style="stop-color:#2AE4FF"/>
+	<stop  offset="0.6313" style="stop-color:#00C2FF"/>
+	<stop  offset="0.8652" style="stop-color:#0075BE"/>
+	<stop  offset="0.9944" style="stop-color:#005B97"/>
+</linearGradient>
+<rect id="XMLID_2_" x="0.5" y="0.5" class="st0" width="959.5" height="559.5"/>
+</svg>

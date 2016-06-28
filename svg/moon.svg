@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150.5 150.5" style="enable-background:new 0 0 150.5 150.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#XMLID_15_);}
+</style>
+<radialGradient id="XMLID_15_" cx="56.5247" cy="438.5247" r="37.7107" gradientTransform="matrix(1.9982 0 0 1.9982 -37.6805 -800.9777)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.2785" style="stop-color:#E9C300"/>
+	<stop  offset="0.5114" style="stop-color:#E9C300;stop-opacity:0.9"/>
+	<stop  offset="0.6393" style="stop-color:#D9F392;stop-opacity:0.2"/>
+	<stop  offset="0.7854" style="stop-color:#FAFF6A;stop-opacity:0.1"/>
+	<stop  offset="1" style="stop-color:#FFFB6A;stop-opacity:0"/>
+</radialGradient>
+<circle id="XMLID_30_" class="st0" cx="75.3" cy="75.3" r="75.3"/>
+</svg>

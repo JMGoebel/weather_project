@@ -18,6 +18,13 @@ Objective: Build a CodePen.io app that is functionally similar to this: http://c
 --Open Weather API--
 To pull local weather data
 
---Ink Scape--
+--Illustrator--
 For svn icons
+
+--SVG Hosting--
+cloudinary.com
+
+--Special Thanks--
+freeCodeCamp.com for guidence
+
 

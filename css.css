@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+* {
+  font-family: "Slabo 27px";
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+#orbit {
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sun {
+  background-image: url(http://res.cloudinary.com/jgoebel/image/upload/v1466976433/sun_tzltyt.svg);
+}
+
+.moon {
+  background-image: url(http://res.cloudinary.com/jgoebel/image/upload/v1466976433/moon_vcbhg0.svg);
+}
+
+.cloud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-image: url(http://res.cloudinary.com/jgoebel/image/upload/v1466976433/cloud_jpnweo.svg);
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-image: url(http://res.cloudinary.com/jgoebel/image/upload/v1466976433/stars_utuw8n.svg);
+}
+
+#data {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+}
+
+#data>div {
+  color: orange;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,.75);
+  min-width: 320px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+#fast_display>div{
+  width: 25%;
+  height: 100px;
+  margin: 0 0 0 6%;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+#weather_digits {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+}
+
+#weather_icon{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#weather_digits:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+#weather_discription {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+#discription {
+  margin: 50px;
+  color: white;
+}
+
+#discription span {
+  color: orange;
+}
+
+#foot {
+  font-size: .75em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+#foot a:link {
+  color: orange;
+}
+#foot a:visited {
+  color: orange;
+}
+#foot a:hover {
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
