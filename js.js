@@ -160,6 +160,8 @@ $(document).ready(function () {
       return "east";
     } else if (dataArray.windDirection >= 25) {
       return "north-east";
+    } else {
+      return "north";
     }
   }
 
