@@ -22,12 +22,12 @@ $(document).ready(function () {
       $('#orbit').addClass('moon');
     }
 
-    //place clouds depending on % of cloude cover... randomly
+    //place clouds depending on % of cloud cover... randomly
     if (dataArray.cloudPercentage >= 10) {
       for (var i = 0; i < (dataArray.cloudPercentage / 10) * 2; i++) {
         //create the clouds
         $('#clouds').append('<div class="cloud"></div>');
-        //set position of clouds
+        //Randomize position of clouds
         var x = Math.floor(Math.random() * (80 - 0) + 0);
         var y = Math.floor(Math.random() * (50 - 0) + 0);
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
       }
     }
 
-    //Display Weather Icon.
+    //Display weather icons
     var iconURL = '';
     switch (Math.floor(dataArray.weatherID / 100)) {
       case 2: // Thunderstorm
@@ -67,9 +67,7 @@ $(document).ready(function () {
         }
         break; //  clear < 800 > cloudy
       default: // icons not set
-        console.log("Unset Icon")
     }
-    console.log(iconURL);
     $('#weather_icon').css("background-image", iconURL);
 
     //Display Weather Digits
@@ -92,14 +90,9 @@ $(document).ready(function () {
     $("#discription").html(buildString);
   }
 
-  function getWeather(lat, lon) {
-    var openWeatherAPI = "http://api.openweathermap.org/data/2.5/weather?",
-      latitude,
-      longitude,
-      weatherData;
-    weatherData = $.getJSON(openWeatherAPI, {lat: lat,
-                                             lon: lon,
-                                             appid: "2102d3e0ed083053990492f54bbf38e2"})
+  function getWeather(city,countryCode) {
+    var openWeatherAPI = "http://api.openweathermap.org/data/2.5/weather?";
+    var weatherData = $.getJSON(openWeatherAPI, {q: city + "," + countryCode, appid:"2102d3e0ed083053990492f54bbf38e2"})
       .done(function (data) {
         dataArray = {
           "city": data.name,
@@ -116,7 +109,6 @@ $(document).ready(function () {
           "windDirection": data.wind.deg,
           "humidity": data.main.humidity
         };
-        console.log(dataArray);
         setScene();
       })
       .fail(function (jqxhr, textStatus, error) {
@@ -176,10 +168,7 @@ $(document).ready(function () {
   });
 
   $.getJSON('http://ip-api.com/json', function(ipAPI) {
-    var lat = ipAPI.lat;
-    var lon = ipAPI.lon;
-
-    getWeather(lat, lon);
+    getWeather(ipAPI.city, ipAPI.countryCode);
   })
 });
 
